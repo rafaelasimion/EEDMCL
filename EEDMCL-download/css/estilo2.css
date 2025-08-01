@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+.navegacao {
+  background: #F8F8FF;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+body::before{
+  content: '';
+  width: 100%;
+  background: #040e3d;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+
+::selection{
+  background: #0b195e;
+  color: #fff;
+}
+
+.container{
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.container .main-card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  transition: 1s;
+}
+
+#two:checked ~ .main-card{
+  margin-left: -100%;
+}
+
+.container .main-card .cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 10px;
+  justify-content: space-evenly;
+}
+
+.main-card .cards .card{
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card .content .img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #040e3d;
+  margin-bottom: 14px;
+}
+
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+  color: grey;
+}
+
+.card .content .job{
+  font-size: 20px;
+  color: #040e3d;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.media-icons {
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: #FFF;
+  border-radius: 50%;
+  background: #040e3d;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons:hover{
+  user-select: none;
+}
+
+@media (max-width: 800px) {
+  .main-card .cards .card {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+  .main-card .cards {
+    width: 95%;    
+  }
+  .main-card {
+    width: 100%;
+  }
+  .cards .card .content .img{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .media-icons {
+    font-size: 12px;
+  }
+  .card .content .job{
+    font-size: 16px;
+  }
+}
