@@ -7,6 +7,10 @@ O objetivo foi criar um site institucional para representar de forma interativa 
 > 🔧 **Este site foi adaptado posteriormente para fins de portfólio pessoal.**  
 > Nomes, fotos e dados identificáveis foram substituídos ou removidos para garantir a privacidade dos envolvidos. O site original não está mais no ar.
 
+## Preview
+
+<img width="90%" alt="eedmcl-image" src="https://github.com/user-attachments/assets/8263e2b0-dc19-4394-b963-e3cc7386cd2f" />
+
 
 ## ✨ Destaques do Projeto
 
@@ -56,7 +60,7 @@ Estudante da **EE Dona Maria Carolina de Lima (PEI)**, onde cursei o Ensino Méd
 
 Você pode clonar o repositório e abrir o arquivo `index.html` no seu navegador.
 
---
+---
 
 📅 **Projeto desenvolvido em 2023** como parte das atividades do clube.
 
